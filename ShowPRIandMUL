@@ -1,0 +1,7 @@
+--Shows primary keys and foreign keys of any given table
+
+SELECT COLUMN_NAME, TABLE_NAME, CONSTRAINT_NAME, REFERENCED_TABLE_NAME
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE TABLE_NAME = '<table_name>'	--Replace table name with any given table name
+AND CONSTRAINT_SCHEMA = '<name>';  	--Not sure wether to replace name of the constraint

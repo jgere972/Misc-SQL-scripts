@@ -1,0 +1,8 @@
+--Table Creation
+CREATE TABLE consultant (
+c_id INT PRIMARY KEY AUTO_INCREMENT,
+c_last VARCHAR(20) NOT NULL,
+c_first VARCHAR(20) NOT NULL,
+c_dob date NOT NULL,
+c_email VARCHAR(30) UNIQUE
+) ENGINE = InnoDB;
